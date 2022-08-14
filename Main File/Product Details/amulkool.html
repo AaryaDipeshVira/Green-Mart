@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--STARTW-->
+    
+    <!--End of Website icon script-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amul Kool</title>
+    <link rel="Icon" href="../image/webiste icon.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    
+<!-- Navigation section starts  -->
+
+<header class="header">
+
+    <a href="../index.php" class="logo"> <i class="fas fa-shopping-basket"></i> &nbsp; Green Mart</a>
+
+    <nav class="navbar">
+        <a href="../index.php">Home</a>
+        <a href="../Pages/Product.php">Products</a>
+        <!-- <a href="./Pages/Favourite.">Favourite Food List</a> -->
+        <a href="../Pages/Contactus.php">Contact Us</a>
+        <!-- <a href="./Pages/admin.php">Admin</a> -->
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn" href="../Pages/cart.php"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="./Pages/searchpage.php" class="search-form" method="post">
+        <input type="search" name="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+            
+        <a href="./Pages/cart.php" class="btn">checkout</a>
+    </div>
+
+    <?php
+        if(isset($_SESSION["userid"])){
+    ?>
+    <form action="logout.php" class="login-form">
+        <h3>logout</h3>
+        <input type="submit" value="logout" class="btn">
+    </form>
+    <?php
+        }
+    ?>
+    <form method="POST" action="login.php" class="login-form">
+        <h3>login now</h3>
+        <input type="email" name="email" placeholder="Your Email" class="box">
+        <input type="password" name="pass" placeholder="Your Password" class="box">
+        <p>don't have an account <a href="userregisteration.php">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+</header>
+
+<!-- Navigation section Ends  -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>180ml - &nbsp;<span>Amul Kool</span></h3>
+    </div>
+
+</section>
+
+
+<!-- Navigation section Ends  -->
+<!--Whatsapp Integration-->
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-dc1c5087-a51b-4ce0-9b2f-4c520bbf6749"></div>
+<!--End of Whatsapp Integration-->
+
+<br/>
+<br/>
+<!--Main Section(Carrot)-->
+     <!-- Product Details -->
+  <section class="section product-detail">
+    <div class="details container">
+      <div class="left">
+        <div class="main">
+          <img src="../image/Milk Products/Amul Kool/i.jpg" alt="" />
+        </div>
+        <div class="thumbnails">
+          <div class="thumbnail">
+            <img src="../image/Milk Products/Amul Kool/new-img (1).png" alt="" />
+          </div>
+          <div class="thumbnail">
+            <img src="../image/Milk Products/Amul Kool/new-img (2).png" alt="" />
+          </div>
+          <div class="thumbnail">
+            <img src="../image/Milk Products/Amul Kool/new-img (3).png" alt="" />
+          </div>
+          <div class="thumbnail">
+            <img src="../image/Milk Products/Amul Kool/new-img (5).png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <span>Amul Kool</span>
+        <h1>Amul Kool</h1>
+        <div class="price">₹ 17</div>
+
+        <h3>Product Detail</h3>
+        <p>
+          Amul Kool Kesar is refreshing milk with taste of Saffron (Kesar). It is an easy to use delicious drink that refreshes you immediately with goodness of milk.
+        </p>
+      </div>
+    </div>
+  </section>
+<!--End of Carrot Section-->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+        <div class="box">
+            <h3><i class="fas fa-shopping-basket"></i> &nbsp; Green Mart</a>
+            </h3>
+            <div>
+                <a href="#" class="links"> <i class="fas fa-at"></i>Organic Grocery Sellers</a>
+                <a href="#" class="links"> <i class="fas fa-at"></i>Support local business</a>
+                <a href="#" class="links"> <i class="fas fa-at"></i>Reduce paper work and save time</a>
+            </div>
+            
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="mailto:greenmart24x7@gmail.com" class="links"> <i class="fas fa-envelope"></i>greenmart24x7@gmail.com</a>
+          <a href="callto:+91 7021675525" class="links"> <i class="fas fa-phone-alt"></i>+91 7021675525</a>
+          <a href="https://goo.gl/maps/fztRgH177NvaULyV7" class="links"> <i class="fas fa-map-marker-alt"></i>A/402 Green Mart Stores, Oppo Kidney Hospital, Iraniwadi, <br/>Kandivali(W), Mumbai-400067</a>
+      </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="../index.html" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+            <a href="../Pages/Product.html" class="links"> <i class="fas fa-arrow-right"></i>Product</a>
+            <a href="../Pages/Favourite.html" class="links"> <i class="fas fa-arrow-right"></i>Favourite Food List</a>
+            <a href="../Pages/Contactus.html" class="links"> <i class="fas fa-arrow-right"></i>Contact Us</a>
+        </div>
+
+        <div class="box">
+            <h3>User Feedback</h3>
+            <p>Your feedback is valuable to us</p>
+            <input type="text" placeholder="Write your feedback" class="email">
+            <input type="submit" value="submit" class="btn">
+        </div>
+
+    </div>
+
+    <div class="credit"> © 2021 - <span> Green Mart</span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>
