@@ -1,0 +1,2 @@
+# Green-Mart
+Green Mart is a grocery management system made for local shop owners to increase revenue and generate more profits. The important key features of green mart website are that the local shop owners can check the frequency of sales which is given in the "product analysis panel of the website" and the second most important feature is that the shop owners will get the records of the products that customers are buying, this can directly reduce time and paperwork and this will be reflected to the "my orders panel of the website".
